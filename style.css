@@ -134,6 +134,7 @@ ul.navlist{
 /* ==================== home section css code ============================ */
 section{
     padding: 90px 8%;
+    overflow-x: hidden;
 }
 
 .home{
