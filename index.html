@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pars Coder || Portfolio website</title>
+    <title>Erlangga L. P | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- boxicon css link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
+    <style>
+        #year {
+            all: unset;
+        }
+    </style>
     <div class="overlay"></div>
     <header>
-        <a href="#" class="logo"><span>R</span>ichi</a>
+        <a href="#" class="logo"><span>Er</span>langga</a>
         <ul class="navlist">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="right-header">
-            <a href="#" class="btn">Let's chat <i class='bx bx-message-dots' ></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=6282139117365" target="_blank" class="btn">Let's chat <i class='bx bx-message-dots' ></i></a>
             <div class="menu-icon">
                 <div class="bar"></div>
             </div>
@@ -32,38 +35,35 @@
 
     <section class="home" id="home">
         <div class="hero-info">
-            <h3>Welcome To my World</h3>
-            <h1>Hi I'm Richard</h1>
+            <h2>Hi There 👋</h2>
+            <h1>I'm Erlangga L. P</h1>
 
             <div class="text-animate">
-                <h2>Frontend Developer</h2>
+                <h2>Website Developer</h2>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum cupiditate delectus ullam voluptates accusamus sapiente minima deleniti cum amet.</p>
 
             <div class="btn-box">
-                <a href="mailto:richard@mail.com" class="btn">Hire Me Now ! <i class='bx bx-right-arrow-alt' ></i></a>
-                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+                <a href="mailto:erlanggalesmanaputra@gmail.com" class="btn">Hire Me Now ! <i class='bx bx-right-arrow-alt' ></i></a>
+                <a href="#" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
             </div>
 
             <div class="social-media">
                 <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-gmail'></i></a>
+                    <span></span>
+                </div>
+                <div class="bg-icon">
                     <a href="#"><i class='bx bxl-instagram'></i></a>
                     <span></span>
                 </div>
-
                 <div class="bg-icon">
                     <a href="#"><i class='bx bxl-github'></i></a>
                     <span></span>
                 </div>
-
                 <div class="bg-icon">
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <span></span>
-                </div>
-
-                <div class="bg-icon">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
                     <span></span>
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <img src="img/hero.png" alt="">
             <div class="rotate-text">
                 <div class="text">
-                    <p>I'm Youtuber And I'm Frontend Developer And I'm Designer</p>
+                    <p>I'm Fullstack Web Developer And I'm Network Engineering</p>
                 </div>
                 <span><i></i></span>
             </div>
@@ -530,7 +530,7 @@
     </section>
 
     <footer>
-        <p>Copyright © 2023 by <span>Pars Coder</span> || All Right Reservd.</p>
+        <p>Copyright © <span id="year"></span> by <span>ERLANGGA</span> - All Rights Reserved.</p>
     </footer>
 
     <div id="progress">
@@ -538,12 +538,11 @@
             <i class='bx bxs-chevrons-up' ></i>
         </span>
     </div>
-
-    <!-- scroll reveal  -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Swiper JS -->
      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- mixitup cdn js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="script.js"></script>
 </body>
