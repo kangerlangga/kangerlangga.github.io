@@ -9,7 +9,38 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
+    <div id="preloader"></div>
     <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            overflow: hidden;
+            background: #fff;
+        }
+        #preloader:before {
+            content: "";
+            position: fixed;
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+            border: 6px solid #630db2;
+            border-top-color: #e7e4fe;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: animate-preloader 1s linear infinite;
+            }
+        @keyframes animate-preloader {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
         #year {
             all: unset;
         }
@@ -42,7 +73,7 @@
                 <h2>Website Developer</h2>
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum cupiditate delectus ullam voluptates accusamus sapiente minima deleniti cum amet.</p>
+            <p>As a Laravel enthusiast, I build dynamic, scalable web solutions with a focus on responsive design, utilizing Bootstrap for efficient frontend development. With expertise in fullstack web development and network engineering, I create seamless digital experiences by integrating intuitive frontend interfaces with robust backend systems.</p>
 
             <div class="btn-box">
                 <a href="mailto:erlanggalesmanaputra@gmail.com" class="btn">Hire Me Now ! <i class='bx bx-right-arrow-alt' ></i></a>
@@ -540,10 +571,19 @@
     </div>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        let preloader = document.querySelector('#preloader');
+        if (preloader) {
+            window.addEventListener('load', () => {
+                preloader.remove();
+            });
+        } else {
+            console.log('Preloader not found');
+        }
     </script>
     <script src="https://unpkg.com/scrollreveal"></script>
      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
