@@ -87,16 +87,16 @@ const sk_counters = document.querySelectorAll(".counter span");
 const progress_bars = document.querySelectorAll(".skills svg circle");
 
 window.addEventListener("scroll",()=>{
-    if(!skillsPlayed)
-    skillsCounter();
+    // if(!skillsPlayed)
+    // skillsCounter();
 })
 
 
-function hasReached(el){
-    let topPosition = el.getBoundingClientRect().top;
-    if(window.innerHeight >= topPosition + el.offsetHeight)return true;
-    return false;
-}
+// function hasReached(el){
+//     let topPosition = el.getBoundingClientRect().top;
+//     if(window.innerHeight >= topPosition + el.offsetHeight)return true;
+//     return false;
+// }
 
 function updateCount(num,maxNum){
     let currentNum = +num.innerText;
@@ -113,8 +113,8 @@ function updateCount(num,maxNum){
 let skillsPlayed = false;
 
 function skillsCounter(){
-    if(!hasReached(first_skill))return;
-    skillsPlayed = true;
+    // if(!hasReached(first_skill))return;
+    // skillsPlayed = true;
     sk_counters.forEach((counter,i)=>{
         let target = +counter.dataset.target;
         let strokeValue = 465 - 465 * (target / 100);
