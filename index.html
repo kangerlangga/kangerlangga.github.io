@@ -477,13 +477,12 @@
                     <h2 class="heading">Contact Me</h2>
                     <span>Let’s Connect and Build Together</span>
                 </div>
-                <form action="#">
-                    <input type="text" placeholder="Name" required>
-                    <input type="tel" placeholder="Phone" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea name="#" id="" cols="30" rows="10" required>
-                    </textarea>
+                <form action="https://formspree.io/f/xrbgkjab" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="tel" name="Phone" placeholder="Phone" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
+                    <textarea name="Message" id="Message" placeholder="Message" cols="30" rows="10" required></textarea>
                     <div class="formBtn">
                         <button type="submit" class="btn">Send Message</button>
                     </div>
