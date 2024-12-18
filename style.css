@@ -92,7 +92,7 @@ ul.navlist{
     transition: all .3s ease;
 }
 
-.btn:hover,.btn-box .d-CV:hover{
+.btn:hover,.btn-box .d-CV:hover,.readMore:hover{
     box-shadow: var(--hover-box-shadow);
 }
 
@@ -977,6 +977,19 @@ footer{
     place-items: center;
     font-size: 25px;
 }
+
+.link {
+    background: var(--gradient-color-bg);
+    color: #fff;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed !important;
+    opacity: 0.6;
+}
+
+
 
 
 
